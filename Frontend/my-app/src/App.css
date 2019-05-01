@@ -31,3 +31,27 @@
     transform: rotate(360deg);
   }
 }
+
+.input-group{
+  width: 65%;
+    margin-left: 18%;
+}
+
+.bg-img{
+  background-color: aliceblue;
+  height: 750px;
+  width : 100%;
+}
+
+.data{
+  padding: 2% 20%;
+  border-radius: 10px;
+
+}
+
+.heading{
+  text-align: center;
+  color: black;
+  font-size: 26px;
+
+}
