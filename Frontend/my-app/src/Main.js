@@ -45,17 +45,20 @@ class Main extends Component {
           });
 
           const user = {
-            id : this.state.id,
-            nums : this.state.nums
+            id : Number(this.state.id),
+            nums : Number(this.state.nums)
 
           };
           console.log(user)
-      
-          axios.post(`https://localhost:5000/api`, { user })
-            .then(res => {
-              console.log("res in axios",res);
-              console.log(res.data);
-            })
+          axios({
+            method: 'POST',
+            data : user,
+            url: "http://127.0.0.1:5000/api",
+        }).then((res)=>
+          this.setState({
+            data : res.data
+          })
+        )
         }
 
   render() {
